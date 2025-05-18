@@ -70,9 +70,7 @@ pub struct DASContext {
 
 impl Default for DASContext {
     fn default() -> Self {
-        let trusted_setup = TrustedSetup::default();
-
-        Self::new(&trusted_setup, UsePrecomp::No)
+        Self::new(&TrustedSetup::default(), UsePrecomp::No)
     }
 }
 
