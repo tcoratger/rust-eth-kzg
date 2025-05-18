@@ -27,8 +27,7 @@ pub struct ProverContext {
 
 impl Default for ProverContext {
     fn default() -> Self {
-        let trusted_setup = TrustedSetup::default();
-        Self::new(&trusted_setup, UsePrecomp::No)
+        Self::new(&TrustedSetup::default(), UsePrecomp::No)
     }
 }
 
